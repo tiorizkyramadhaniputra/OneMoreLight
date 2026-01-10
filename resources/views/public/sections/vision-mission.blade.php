@@ -84,14 +84,15 @@ $visionImage = isset($settings['vision_image']) ? asset($settings['vision_image'
                 </div>
 
                 <!-- CTA -->
-                <div class="mt-10 flex flex-wrap gap-4">
-                    <button class="px-8 py-3 bg-[#0AA1FF] text-white font-semibold rounded shadow-lg shadow-blue-200 hover:bg-[#001EF2] transition-all duration-300">
-                        Lihat Unit Bisnis
-                    </button>
-                    <button class="px-8 py-3 bg-white border border-gray-200 text-gray-600 font-semibold rounded hover:border-[#0AA1FF] hover:text-[#0AA1FF] transition-all duration-300">
-                        Sejarah Perseroan
-                    </button>
-                </div>
+             <div class="mt-10 flex flex-wrap gap-4">
+    <a href="{{ route('history.unit') }}" class="px-8 py-3 bg-[#0AA1FF] text-white font-semibold rounded shadow-lg shadow-blue-200 hover:bg-[#001EF2] transition-all duration-300 inline-block">
+        Lihat Unit Bisnis
+    </a>
+
+    <a href="{{ route('history.unit') }}" class="px-8 py-3 bg-white border border-gray-200 text-gray-600 font-semibold rounded hover:border-[#0AA1FF] hover:text-[#0AA1FF] transition-all duration-300 inline-block text-center">
+        Sejarah Perseroan
+    </a>
+</div>
             </div>
             
         </div>

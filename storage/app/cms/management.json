@@ -102,13 +102,6 @@
                 "role": "ANGGOTA",
                 "image": "images\/MrSantoso.jpg",
                 "bio": "Lahir pada tahun 1953. Sarjana Muda Universitas Ekonomi Trisakti tahun 1978."
-            },
-            {
-                "id": 18,
-                "name": "M hasbi",
-                "role": "CIO",
-                "bio": "asfafa",
-                "image": "uploads\/management\/member_1767433210.jpeg"
             }
         ]
     },
@@ -147,6 +140,20 @@
                 "role": "SEKRETARIS PERUSAHAAN",
                 "image": "images\/UserIcon.jpg",
                 "bio": "Lahir di Semarang pada tahun 1971. Memperoleh gelar Magister Manajemen dari Sekolah Tinggi Manajemen Prasetiya Mulya tahun 1996."
+            },
+            {
+                "id": 18,
+                "name": "M hasbi",
+                "role": "CIO",
+                "bio": "asfafa",
+                "image": "uploads\/management\/member_1767433210.jpeg"
+            },
+            {
+                "id": 19,
+                "name": "Tio Rizky R.P",
+                "role": "CIO",
+                "bio": "Web Developer Enthusiast",
+                "image": "uploads\/management\/member_1768043052.png"
             }
         ]
     }

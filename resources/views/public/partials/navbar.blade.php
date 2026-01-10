@@ -130,26 +130,36 @@ $menuItems = [
         <div class="flex items-center justify-between">
           
             <!-- LOGO SECTION -->
-            <a href="/" class="flex items-center gap-3 z-50 group">
-                <div 
-                    class="relative transition-transform duration-300"
-                    :class="scrolled ? 'scale-90' : 'scale-100'"
-                >
-                    <div class="bg-white rounded-md p-1 shadow-sm shrink-0 flex items-center justify-center hover:scale-105 transition-transform duration-300">
-                        <img 
-                            src="{{ asset('images/Charoend.png') }}" 
-                            alt="Logo CPIN" 
-                            class="w-16 h-16 object-contain" 
-                        />
-                    </div>
-                </div>
-                <div 
-                    class="font-bold tracking-tight leading-tight transition-all duration-300"
-                    :class="mobileMenuOpen ? 'text-[#001EF2]' : 'text-white'"
-                >
-                    <span :class="scrolled ? 'text-lg' : 'text-xl'"> PT CHAROEN POKPHAND INDONESIA Tbk</span>
-                </div>
-            </a>
+<a href="/" class="flex items-center gap-3 z-50 group">
+    <div 
+        class="relative transition-all duration-500 ease-in-out"
+        :class="scrolled ? 'scale-90' : 'scale-100'"
+    >
+        <div 
+            class="rounded-md p-1 shrink-0 flex items-center justify-center transition-all duration-500 ease-in-out"
+            :class="scrolled ? 'bg-transparent shadow-none' : 'bg-white shadow-sm'"
+        >
+            <img 
+                src="{{ asset('images/Charoend.png') }}" 
+                alt="Logo CPIN" 
+                class="w-16 h-16 object-contain transition-all duration-500"
+                :class="scrolled ? 'scale-110' : ''" 
+            />
+        </div>
+    </div>
+    
+    <div 
+        class="font-bold tracking-tight leading-tight transition-all duration-300"
+        :class="mobileMenuOpen ? 'text-[#001EF2]' : 'text-white'"
+    >
+        <span 
+            class="transition-all duration-300"
+            :class="scrolled ? 'text-lg text-white' : 'text-xl text-white'"
+        > 
+            PT CHAROEN POKPHAND INDONESIA Tbk
+        </span>
+    </div>
+</a>
 
             <!-- DESKTOP NAVIGATION -->
             <nav class="hidden lg:flex items-center gap-8">

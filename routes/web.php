@@ -11,6 +11,28 @@ Route::get('/', function () {
     return view('public.home');
 });
 
+Route::get('/tentang-kami/sejarah', function () {
+    // Memanggil file yang ada di resources/views/public/content/SejarahUnitBisnis.blade.php
+    return view('public.content.SejarahUnitBisnis');
+})->name('history.unit');
+
+// Route untuk Ayam Pedaging
+Route::get('/produk/broiler', function () {
+    return view('public.content.AyamPedaging');
+})->name('produk.broiler');
+
+Route::get('/produk/doc', function () {
+    return view('public.content.DayOldChicks');
+})->name('produk.doc');
+
+Route::get('/produk/pakan', function () {
+    return view('public.content.PakanTernak'); 
+})->name('produk.pakan');
+
+Route::get('/produk/makanan-olahan', function () {
+    return view('public.content.MakananOlahan');
+})->name('produk.makanan');
+
 // Admin Auth Routes
 Route::get('/admin/login', function () {
     return view('admin.auth.login');
